@@ -5,7 +5,7 @@ Welcome to my **3D Interactive Portfolio**! This website isn’t just a digital 
 
 Created with cutting-edge web technologies like **Three.js**, **Blender**, and **Bootstrap**, it reflects my commitment to crafting visually appealing and highly functional digital experiences. 
 
-You can check out the live portfolio here: [Shubodaya's 3D Interactive Portfolio](https://shubodaya.github.io/Portfolio/)
+You can check out the live portfolio here: [Shubodaya's 3D Interactive Portfolio](https://shubodaya.github.io/Portfolio-three/)
 
 ---
 
