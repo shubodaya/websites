@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Shubodaya's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <style>
+      /*======================================
+//--//-->   ABOUT
+======================================*/
+
+      .about-mf .box-shadow-full {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+
+      .about-mf .about-img {
+        margin-bottom: 2rem;
+      }
+
+      .about-mf .about-img img {
+        margin-left: 10px;
+      }
+
+      .skill-mf .progress {
+        /* background-color: #cde1f8; */
+        margin: 0.5rem 0 1.2rem;
+        border-radius: 0;
+        height: 0.7rem;
+      }
+
+      .skill-mf .progress .progress-bar {
+        height: 0.7rem;
+        background-color: #ffbd39;
+      }
+
+      /* Animation styles */
+      #typing-animation {
+        position: relative;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(20, end) infinite;
+      }
+
+      #typing-animation:before {
+        content: "";
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #ccc;
+        animation: typing-cursor 0.5s ease-in-out infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes typing-cursor {
+        from {
+          width: 5px;
+        }
+
+        to {
+          width: 0;
+        }
+      }
+
+      /* project image zoom effect */
+
+      .zoom-effect {
+        overflow: hidden;
+        transition: transform 0.3s ease-out;
+      }
+
+      .zoom-effect:hover {
+        transform: scale(1.1);
+      }
+
+      @media screen and (orientation: portrait) {
+        body {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+
+        .order-md-last {
+          visibility: hidden;
+        }
+      }
+    </style>
+    
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Shubodaya H N</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span>
+          Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">
+                <span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="experience.html" class="nav-link">
+                <span>Experience</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link">
+                <span>Projects</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="education.html" class="nav-link">
+                <span>Education</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume-section" class="nav-link">
+                <span>Resume</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link">
+                <span>Contact</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#send-message" class="nav-link">
+                <span>Message me</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="ftco-section ftco-hireme img margin-top"
+     style="background-color: black; background-image: url(images/bg_0.png); background-size: cover; background-position: center; background-attachment: fixed; position: relative; z-index: 0;">
+      <section id="home-section" class="hero" style="position: relative; z-index: 1;">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <!-- Left Column: Intro + Buttons -->
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <span class="subheading" style="font-weight: bold;">Hello!</span>
+              <h1 class="mb-4 mt-3">I'm <span>Shubodaya</span></h1>
+
+              <!-- Typing Animation -->
+              <span id="typing-animation"></span>
+
+              <div class="mt-4">
+                <a href="https://drive.google.com/file/d/1t87kuPPaZn5gtye67Uwl3anHkwOakYcO/view?usp=sharing" 
+                  class="btn btn-success py-3 px-4 mr-3" target="_blank" rel="noopener noreferrer">Resume</a>
+                  
+                <a href="https://www.linkedin.com/in/shubodaya/" 
+                  class="btn btn-dark py-3 px-4" target="_blank" rel="noopener noreferrer">My Linkedin</a>
+              </div>
+            </div>
+
+            <!-- Right Column: Background Image -->
+            <div 
+              id="bg-img-col" 
+              class="col-md-6 scroll-animate" 
+              style="background-image: url('images/first.png'); background-size: cover; background-position: center; min-height: 500px; pointer-events: none;">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+     <script>
+const element = document.getElementById('typing-animation');
+const text = 'Network Security Engineer     ';
+let index = 0;
+
+function type() {
+  element.textContent = text.slice(0, index + 1);
+  index++;
+  if (index < text.length) {
+    setTimeout(type, 10); // typing speed
+  } else {
+    // Wait 2 seconds after finishing before restarting
+    setTimeout(() => {
+      index = 0;
+      element.textContent = '';
+      type();
+    }, 5000); // 2-second pause
+  }
+}
+
+// Start typing
+type();
+</script>
+
+
+
+<div class="binary-bg-container" style="position: relative;">
+      <canvas id="binary-resume-canvas"></canvas>
+
+  <section class="ftco-section ftco-no-pb" id="quick-links-section">
+    
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Navigate</h1>
+        <h2 class="mb-4">Explore Sections</h2>
+        <br>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- About Me Tile -->
+      <div class="col-md-6 col-lg-3 project-tile">
+        <a href="about.html" class="text-decoration-none">
+          <div class="resume-wrap ftco-animate text-center">
+            <h4>About Me</h4>
+          </div>
+        </a>
+      </div>
+
+      <!-- Experience Tile -->
+      <div class="col-md-6 col-lg-3 project-tile">
+        <a href="experience.html" class="text-decoration-none">
+          <div class="resume-wrap ftco-animate text-center">
+            <h4>Experience</h4>
+          </div>
+        </a>
+      </div>
+
+      <!-- Projects Tile -->
+      <div class="col-md-6 col-lg-3 project-tile">
+        <a href="projects.html" class="text-decoration-none">
+          <div class="resume-wrap ftco-animate text-center">
+            <h4>Projects</h4>
+          </div>
+        </a>
+      </div>
+
+      <!-- Education Tile -->
+      <div class="col-md-6 col-lg-3 project-tile">
+        <a href="education.html" class="text-decoration-none">
+          <div class="resume-wrap ftco-animate text-center">
+            <h4>Education</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+    <div id="gaming-interaction-hint">
+        <span>Click and drag to interact</span>
+        <div class="arrow">&#8595;</div> <!-- Down arrow -->
+      </div>
+        <div class="container d-flex justify-content-center align-items-center" style="padding: 10px 0;">
+      <div class="text-center">
+        <div id="progress-container-gaming" class="mb-3">
+          <div id="progress">Loading Gaming Setup...</div>
+        </div>
+        <div id="gaming-model-container"></div>
+      </div>
+    </div>
+
+</section>
+ 
+
+      <br><br>
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+      <div class="container">
+        <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/second.png)"></div>
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <br>
+            <br>
+            <p>Technical Support Engineer with 2 years of experience in firewall technology. Expert in regulatory compliance, technical troubleshooting, and customer service. Skilled in problem-solving, attention to detail, and teamwork. Passionate about privacy protection, ethical responsibility, and security. Dedicated to solving complex problems and making a difference in the cybersecurity landscape.</p>
+          </div>
+        </div>
+        <div class="counter-wrap ftco-animate d-flex mt-md-3 justify-content-center">
+          <div class="text">
+            <p>
+              <a href="https://drive.google.com/file/d/1t87kuPPaZn5gtye67Uwl3anHkwOakYcO/view?usp=sharing" class="btn btn-success py-3 px-4">Download Resume</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+       
+<br><br><br>
+   
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="hid" style="visibility:hidden">
+        <div class="container">
+          <div class="row d-md-flex align-items-center">
+            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="20">0</strong>
+                  <span>Achievements</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="10">0</strong>
+                  <span>Artworks</span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="1000">0</strong> <span>Mentored Students</span> </div> </div> </div> <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="500">0</strong> <span>Cups of coffee</span> </div> </div> </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+        <!-- <div class="container"> -->
+        <div class="row justify-content-center">
+          <div class="col-md-7 ftco-animate text-center">
+            <h2>Here's my<span>
+                <button id="gitbtn" class="btn btn-light py-3 px-5" onclick="gitClick()">GitHub</button>
+              </span>
+            </h2>
+            <div class="heading">
+              <h4>
+                Explore my Projects.
+              </h4>
+              <br>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+
+
+    <br><br><br>
+
+    
+    </div> 
+    <!-- Contact Me Section -->
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+          <div class="container">
+              <div class="row justify-content-center mb-5 pb-3">
+                  <div class="col-md-7 heading-section text-center ftco-animate">
+                      <h1 class="big big-2">Contact</h1>
+                      <h2 class="mb-4">Contact Me</h2>
+                      <br><br>
+                      <p>Below are the details to reach out to me!</p>
+                  </div>
+              </div>
+
+              <div class="row d-flex contact-info mb-5">
+                  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                      <div class="align-self-stretch box p-4 text-center">
+                          <div class="icon d-flex align-items-center justify-content-center">
+                              <span class="icon-map-signs"></span>
+                          </div>
+                          <h3 class="mb-4">Address</h3>
+                          <p>Swansea, Wales, UK</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                      <div class="align-self-stretch box p-4 text-center">
+                          <div class="icon d-flex align-items-center justify-content-center">
+                              <span class="icon-phone2"></span>
+                          </div>
+                          <h3 class="mb-4">Contact Number</h3>
+                          <p>
+                              <a href="tel://7463601739">+44 7436301739</a>
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                      <div class="align-self-stretch box p-4 text-center">
+                          <div class="icon d-flex align-items-center justify-content-center">
+                              <span class="icon-paper-plane"></span>
+                          </div>
+                          <h3 class="mb-4">Email Address</h3>
+                          <p>
+                              <a href="mailto:hnshubodaya@gmail.com">hnshubodaya@gmail.com</a>
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                      <div class="align-self-stretch box p-4 text-center">
+                          <div class="icon d-flex align-items-center justify-content-center globe-3d">
+                              <span class="icon-globe"></span>
+                          </div>
+                          <h3 class="mb-4">Download Resume</h3>
+                          <p>
+                              <a href="https://drive.google.com/file/d/1t87kuPPaZn5gtye67Uwl3anHkwOakYcO/view?usp=sharing">resumelink</a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+        <!-- Message Me Section -->
+        <section class="ftco-section message-section ftco-no-pb" id="message-section">
+          <div class="starry-background">
+            <div class="container">
+              <div class="row justify-content-center">
+                  <!-- Left Column: Form and Find Me On -->
+                  <div class="col-md-6 ftco-animate">
+                      <h2 style="text-align: center;">Have a <span>Question?</span></h2>
+                      <div class="que" id="send-message">
+                          <form action="https://api.web3forms.com/submit" method="POST">
+                              <input type="hidden" name="access_key" value="6949e0cb-d280-4f91-94aa-f80685b608a9">
+                              <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                  <div class="col-12">
+                                      <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                      <input type="text" class="form-control" id="fullname" name="fullname" required="required">
+                                  </div>
+                                  <div class="col-12 col-md-6">
+                                      <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                      <div class="input-group">
+                                          <span class="input-group-text">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                              </svg>
+                                          </span>
+                                          <input type="email" class="form-control" id="email" name="email" required="required">
+                                      </div>
+                                  </div>
+                                  <div class="col-12 col-md-6">
+                                      <label for="phone" class="form-label">Phone Number</label>
+                                      <div class="input-group">
+                                          <span class="input-group-text">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                              </svg>
+                                          </span>
+                                          <input type="tel" class="form-control" id="phone" name="phone">
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                                      <input type="text" class="form-control" id="subject" name="subject" required="required">
+                                  </div>
+                                  <div class="col-12">
+                                      <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                                      <textarea class="form-control" id="message" name="message" rows="3" required="required"></textarea>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="d-grid"><br>
+                                          <button class="btn btn-success py-3 px-5" type="submit">Send Message</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                      <!-- Find Me On Section -->
+                      <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mt-4">
+                          <li class="ftco-animate normal-txt">Find me on</li>
+                          <li class="ftco-animate">
+                              <a href="https://www.linkedin.com/in/shubodaya/">
+                                  <span class="icon-linkedin"></span></a>
+                          </li>
+                          <li class="ftco-animate">
+                              <a href="https://twitter.com/chubbihn">
+                                  <span class="icon-twitter"></span></a>
+                          </li>
+                          <li class="ftco-animate">
+                              <a href="https://www.instagram.com/shutter.__.speed/">
+                                  <span class="icon-instagram"></span></a>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <!-- Right Column: 3D Model -->
+                  <div class="col-md-6 ftco-animate">
+                      <div id="model3-container" style="width: 40px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                          <div id="progress3-container" style="display: none;">
+                              <div id="progress">Loading Model...</div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+      <footer class="ftco-footer ftco-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+
+              <p style="display: none;">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="icon-heart color-danger" aria-hidden="true"></i>
+                by
+                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- loader -->
+      <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+          <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+          <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg>
+      </div>
+
+
+
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/scrollax.min.js"></script>
+      <script type= "module" src="js/model.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+        function gitClick() {
+          window.location.href = 'https://github.com/shubodaya';
+        }
+      </script>
+      
+      
+
+    </body>
+
+  </html>
